@@ -8,6 +8,7 @@ all:
 	$(DOCKER) run --rm -it --name zmk \
 		-v $(PWD)/firmware:/app/firmware:z \
 		-v $(PWD)/config:/app/config:ro,z \
+		-v $(PWD)/compilation_databases:/app/compilation_databases:z \
 		-e TIMESTAMP=$(TIMESTAMP) \
 		zmk
 
