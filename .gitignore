@@ -1,3 +1,4 @@
 /firmware/*.uf2
 .idea/*
 .fleet/*
+.cache
